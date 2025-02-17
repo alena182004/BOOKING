@@ -233,7 +233,7 @@
             const date = document.getElementById("date").value;
             
             const message = `Нове бронювання:\nІм'я: ${name}\nEmail: ${email}\nТелефон: ${phone}\nДата: ${date}`;
-            const token = "7803807334:AAFxuvJDumvOgt20PAKbuo0mE82-_U6WzI8"; // Ваш токен Telegram
+            const token = ""; // Ваш токен Telegram
             const chatId = "6953171498"; // Ваш чат ID
 
             fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`)
